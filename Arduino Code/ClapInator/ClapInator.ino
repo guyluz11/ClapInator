@@ -1,5 +1,5 @@
-const int ledpin=D3;  //  Led/ Relay pin
-const int soundPin=D4;  //  Microphone Sensor Detection Module output digital pin
+const int ledpin = D3;  //  Led/ Relay pin
+const int soundPin = D4;  //  Microphone Sensor Detection Module output digital pin
 
 unsigned long startTime = 0;  //  Save the time of the first clap for each sicale
 unsigned long secondClapDelayMin = 300; //  Minimum time to wait for the second clap
@@ -32,6 +32,7 @@ void clapFunction(){
   }
   else {
     timePased = millis() - startTime;
+    
     if(digitalSpeeker()){
       Serial.println("Time passed: " + String(timePased));
         if (timePased >= secondClapDelayMin && timePased <= secondClapDelayMax){
@@ -47,11 +48,10 @@ void clapFunction(){
           }
           startTime = 0;
         }
-      
     }
     else if ( timePased > idleRestartTime ) {
-        Serial.println("Reset");
-        startTime = 0;
+      Serial.println("Reset");
+      startTime = 0;
     }
   }
 }
