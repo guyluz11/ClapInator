@@ -1,5 +1,5 @@
-const int ledpin = D3;  //  Led/ Relay pin
-const int soundPin = D4;  //  Microphone Sensor Detection Module output digital pin
+const int ledpin = 0;  //  Led/ Relay pin
+const int soundPin = 2;  //  Microphone Sensor Detection Module output digital pin
 
 unsigned long startTime = 0;  //  Save the time of the first clap for each sicale
 unsigned long secondClapDelayMin = 300; //  Minimum time to wait for the second clap
