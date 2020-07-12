@@ -22,4 +22,5 @@ Microphone sensor detection module:
 
 
 
-![Image](Media/Images/IMG_20191206_171854.jpg?raw=true "Title")
+<img src="https://github.com/guyluz11/ClapInator/blob/master/Media/Images/IMG_20191206_171854.jpg" height="450">
+
